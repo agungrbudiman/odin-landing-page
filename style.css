@@ -10,23 +10,35 @@ body {
     justify-content: space-between;
 }
 
-button {
+.button {
     padding: 5px 10px;
-    border: 0;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    display: inline;
     border-radius: 4px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.button.invert {
+    background-color: transparent;
+    border: 1px solid #F9FAF8;
+}
+
+.row {
+    padding: 50px 100px;
 }
 
 .header {
     background-color: #1F2937;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 100px;
+    padding-top: 25px;
 }
 
 .navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 .navigation .logo {
@@ -40,44 +52,44 @@ button {
 }
 
 .navigation .links a {
-    font-size: 18px;
+    font-size: 16px;
     color: #E5E7EB;
     text-decoration: none;
 }
 
 .hero {
     display: flex;
-    margin: 50px 0;
-    gap: 50px;
+    gap: 15px;
 }
 
-.hero .image {
-    background-color: lightgrey;
+.hero .left {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    flex: 1 0 50%;
+    gap: 10px;
 }
 
-.hero .content .title {
+.hero .left .title {
     font-size: 48px;
     font-weight: 800;
     color: #F9FAF8;
 }
 
-.hero .content p {
+.hero .left .text {
     color: #E5E7EB;
     font-size: 14px;
 }
 
-.hero .content button {
-    background-color: #3882F6;
-    color: #F9FAF8;
+.hero .left .button {
+    align-self: flex-start;
 }
 
-.information {
-    padding: 50px 0;
+.hero .right {
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex: 1 0 40%;
 }
 
 .information .title {
@@ -92,6 +104,7 @@ button {
     display: flex;
     justify-content: center;
     gap: 25px;
+    flex-wrap: wrap;
 }
 
 .information .box {
@@ -112,13 +125,12 @@ button {
 
 .quote {
     background-color: #E5E7EB;
-    padding: 50px 175px;
     display: flex;
     flex-direction: column;
 }
 
-.quote p {
-    font-size: 28px;
+.quote .text {
+    font-size: 24px;
     font-style: italic;
     font-weight: 300;
     color: #1F2937;
@@ -131,31 +143,25 @@ button {
     text-align: right;
 }
 
-.bottom {
-    padding: 50px 125px;
-}
-
 .banner {
     background-color: #3882F6;
     padding: 25px 50px;
     display: flex;
     justify-content: space-between;
+    border-radius: 8px;
+    align-items: center;
 }
 
-.banner .content div {
+.banner .left .title {
     font-size: 20px;
     color: #F9FAF8;
     font-weight: bold;
 }
 
-.banner .content p {
+.banner .left .text {
     font-size: 16px;
     color: #E5E7EB;
     margin: 5px 0;
-}
-
-.banner .button {
-    align-self: flex-end;
 }
 
 .banner button {
@@ -167,10 +173,8 @@ button {
 .footer {
     background-color: #1F2937;
     color: #F9FAF8;
-    padding: 25px 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
