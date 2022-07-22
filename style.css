@@ -130,7 +130,7 @@ body {
 }
 
 .quote .text {
-    font-size: 24px;
+    font-size: 28px;
     font-style: italic;
     font-weight: 300;
     color: #1F2937;
@@ -145,7 +145,7 @@ body {
 
 .banner {
     background-color: #3882F6;
-    padding: 25px 50px;
+    padding: 25px 10vw;
     display: flex;
     justify-content: space-between;
     border-radius: 8px;
